@@ -77,8 +77,8 @@ class Satellite private constructor(
     }
     private fun String.formatToDouble() =
         when(first()){
-            '-' -> "-${this.drop(2).replace("D", "E")}".toDoubleOrNull()?:0.0
-            else -> this.drop(1).replace("D", "E").toDoubleOrNull()?:0.0
+            '-' -> "-0.${this.drop(2).replace("D", "E")}".toDoubleOrNull()?:0.0
+            else -> "0.${this.drop(1).replace("D", "E")}".toDoubleOrNull()?:0.0
         }
 
     companion object{
