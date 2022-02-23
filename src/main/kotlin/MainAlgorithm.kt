@@ -29,7 +29,7 @@ data class MainAlgorithm(
             if(abs(E_kn - E_kn) < eps)
                 break
         }
-
+        E_k = E_kn
         //8
         val der_E_k = n / (1 - E_orbit * cos(E_k))
 
