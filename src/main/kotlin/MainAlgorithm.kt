@@ -94,11 +94,6 @@ data class MainAlgorithm(
         )
     }
 
-
-
-
-
-
     companion object{
         private const val m = 3.986005E14
         private const val earthRotationSpeed = 7.2921151467E-5

@@ -25,5 +25,4 @@ object RinexParser {
     private infix fun List<String>.readSatelliteBody(number: Int):List<String>{
         return this.subList(number*8, number*8+8)
     }
-
 }
